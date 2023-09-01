@@ -32,8 +32,10 @@ const Stack = createNativeStackNavigator();
         <Stack.Screen name="CountryAndLanguages" component={CountryScreen} />
         <Stack.Screen name="CustomerService" component={CustomerScreen} />
         <Stack.Screen name="SignIn" component={SignInScreen} />
-        <Stack.Screen name="CreateAccount" component={SignUpScreen} />
-        <Stack.Screen name="LogIn" component={LogInScreen} />
+        <Stack.Screen name="CreateAccount" component={SignUpScreen}
+        options={{presentation:"fullScreenModal", headerShown: false}} />
+        <Stack.Screen name="LogIn" component={LogInScreen}
+        options={{presentation:"fullScreenModal", headerShown: false}} />
       </Stack.Navigator>
     )
   }

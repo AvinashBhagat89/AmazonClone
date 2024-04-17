@@ -25,7 +25,7 @@ const Stack = createNativeStackNavigator();
   function TabNavigator()  {
     return (
       <Stack.Navigator>
-        {/* After doing the nested navigation the 1st screen which is add as StackNavigator to Stack.Screen will give you the 
+        {/* After doing the nested navigation the 1st screen which is added as StackNavigator to Stack.Screen will give you the 
         name of the screen at the top of the screen name={name given} you have to give the option headerShown false */}
         <Stack.Screen name="HomeScreen" component={StackNavigator}
         options={{presentation:"fullScreenModal", headerShown: false}} />
